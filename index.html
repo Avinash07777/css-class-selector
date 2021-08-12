@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Class Selectors</title>
+        <style>
+        div
+        {
+            width: 200px;
+            height: 200px;
+            background:blue;
+        }
+        #a1 
+        {
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        span.a2
+        {
+            display: block;
+             width: 200px;
+             height: 200px;
+             background-color: gold;
+        }
+        a[href="https://oklabsguru.blogspot.com/2021/08/what-are-different-selectors-in-css.html"]
+        {
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            display: block;
+        }
+        *
+        {
+            border:  solid 7px black;
+        }
+        /*
+        pesudo class selector
+        element1::selector{
+            property::value;
+        }
+        */
+        h1::after
+        {
+        content: url(https://media1.giphy.com/media/8FcLCkucMAcK5VTikX/200w.gif?cid=82a1493bi33mmfotys650pye4cao9ylk2rd9kk5h87pg6vri&rid=200w.gif&ct=g)
+        }
+        /* group/combinational selector syntax
+          element1,element2,element3....{
+              property:value
+          }
+          */
+          div,span#a1,span.a2,a[href="https://oklabsguru.blogspot.com/2021/08/what-are-different-selectors-in-css.html"]
+          {
+              display:inline-block;
+              font-style: italic;
+              font-weight: bold;
+          }
+          div#a3:hover
+          {
+              background-color:pink
+          }
+          
+              
+              
+              
+          /*
+          CSS class selector
+          element:selector
+          {
+              property:value
+          }
+          */
+        </style>
+    </head>
+    <body>
+        <div>CSS Element Selector</div>
+        <span id="a1">id selector</span>
+        <span class="a2">CSS class selector</span>
+        <a href="https://oklabsguru.blogspot.com/2021/08/what-are-different-selectors-in-css.html">CSS attribute selector"click here"</a>
+        <h1>CSS pseudo class selector::</h1>
+        <div id="a3">CSS pseudo class selector</div>
+
+        
+
+    </body>
+</html>
